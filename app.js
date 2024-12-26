@@ -2,11 +2,11 @@ const express = require('express');
 const app = express();
 
 app.get('/', function (req, res) {
-    res.send('Hello, World!');
+    res.sendFile(__dirname + '/html/ index.html');
 });
 
 app.get('/about', function (req, res) {
-    res.send('This is about page');
+    res.sendFile(__dirname + '/html/about.html');
 });
 
 app.get('/blog', function (req, res) {
