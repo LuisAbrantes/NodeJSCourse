@@ -1,0 +1,10 @@
+{{! filepath: /Users/luisabrantes/Documents/NodeJSCourse/views/home.handlebars }}
+<h1>POSTS LIST</h1>
+
+{{#each posts}}
+    <small>{{createdAt}}</small>
+    <h1>{{title}}</h1>
+    <p>{{content}}</p>
+    <a href='/delete/{{id}}'><button>Delete</button></a>
+    <hr />
+{{/each}}
